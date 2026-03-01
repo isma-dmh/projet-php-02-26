@@ -14,7 +14,7 @@ $villes = selectCities($pdo);
         <p class="secondary littleText">Rejoignez CityApp et partagez votre ville</p>
     </div>
 
-    <form action="./profil.php" method="post" id="enregistrement">
+    <form action="./profil.php" method="post">
 
         <div class="blocInput">
             <label class="secondary littleText" for="lastname">Nom</label>
@@ -47,7 +47,7 @@ $villes = selectCities($pdo);
 
                 <option value="">— Choisissez une ville —</option>
                 <?php foreach ($villes as $ville): ?>
-                    <option value="<?php echo $ville["nom"] ?>"><?php echo $ville["nom"] . " (" . $ville["pays"] . ")" ?>
+                    <option value="<?php echo $ville->nom ?>"><?php echo $ville->nom . " (" . $ville->pays . ")" ?>
                     </option>
                 <?php endforeach; ?>
 

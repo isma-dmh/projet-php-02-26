@@ -22,7 +22,7 @@ if (isset($_POST["lastname"], $_POST["firstname"], $_POST["pseudo"], $_POST["age
     <div id="circle"></div>
     <div id="info">
         <h1 id="fullname"><?php echo $user->getNom() . " " . $user->getPrenom(); ?></h1>
-        <p class="blue">@<?php echo $user->getPseudo();?></p>
+        <p class="txtBlue">@<?php echo $user->getPseudo();?></p>
         <div id="fullinfo"></div>
     </div>
 </div>

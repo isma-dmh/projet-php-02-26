@@ -56,10 +56,10 @@ $cities = selectCities($pdo);
         <tbody>
             <?php foreach ($cities as $city): ?>
                 <tr>
-                    <td class="id secondary"><?php echo $city["id_ville"] ?></td>
-                    <th><?php echo $city["nom"] ?></th>
-                    <td><?php echo $city["pays"] ?></td>
-                    <td class="<?php if ($city["nom"] == $city["capital"]): ?>txtGreen<?php else: ?>txtBlue<?php endif;?>"><?php echo $city["capital"] ?></td>
+                    <td class="id secondary"><?php echo $city->id_ville ?></td>
+                    <th><?php echo $city->nom ?></th>
+                    <td><?php echo $city->pays ?></td>
+                    <td class="<?php if ($city->nom == $city->capital): ?>txtGreen<?php else: ?>txtBlue<?php endif;?>"><?php echo $city->capital ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
